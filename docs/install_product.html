@@ -1,0 +1,195 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" data-whc_version="24.1">
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\images/ResourceMeasurementFacility.svg"/><link rel="icon" href="oxygen-webhelp\template\images/ResourceMeasurementFacility.svg"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2024"/><meta name="copyright" content="(C) Copyright 2024"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="You must install Grafana Plugin Beta to analyze and visualize data from the OM monitoring agents."/><meta name="DC.relation" content="preq.html"/><meta name="DC.relation" content="create_ds.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="install_product"/><meta name="DC.language" content="en-us"/>        
+      <title>Installing Grafana Plugin Beta</title><!--  Generated with Oxygen version 24.1, build number 2022110310.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="install_product-d260e52"/><meta name="wh-source-relpath" content="install_product.dita"/><meta name="wh-out-relpath" content="install_product.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2022110310"/>
+    
+    
+    <script src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen-gray.css?buildId=2022110310"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2022110310"/></head>
+
+    <body id="install_product" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title"><span class="keyword">Grafana Plugin Beta</span> Documentation</span></a></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                
+                
+                
+   </div>
+   
+ <!-- <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="color:#FFFFFF;" style="font-size:larger;">OM Agents Help
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="omcics_help/ehelp_container_omcics.html" target="_blank" style="font-size:larger;">Z OMEGAMON for CICS</a></li>
+    <li><a class="dropdown-item" href="db2perf_help/ehelp_container.html" target="_blank" style="font-size:larger;">OMEGAMON for Db2 Performance Expert on z/OS</a></li>
+    <li><a class="dropdown-item" href="omstg_help/ehelp_container_omstg.html" target="_blank" style="font-size:larger;">OMEGAMON for Storage on z/OS</a></li>
+  </ul>
+</div> -->
+
+  <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:larger;">Resources
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="https://www.ibm.com/docs/en/om-shared?topic=63x-introduction-omegamon-shared-documentation" target="_blank" style="font-size:larger;">OMEGAMON Docs</a></li>
+    <li><a href="https://github.com/" target="_blank" style="font-size:larger;">GitHub</a></li>
+    <li><a href="https://grafana.com/docs/grafana/latest/" target="_blank" style="font-size:larger;">Grafana docs</a></li>
+  </ul>
+</div>
+
+ <!-- <div class="external-link" id="navbarGitHub">
+  <ul class="navbar-nav">
+   
+   <li <p class="nav-item">
+    <a class="nav-link" style="color:#0f62fe;" href="https://www.ibm.com/docs/en/om-shared?topic=63x-introduction-omegamon-shared-documentation" target="_blank"> <input type="button" value="OMEGAMON Docs"> </p>
+   </li>
+    <li <p class="nav-item">
+    <a class="nav-link" style="color:#0f62fe;" href="https://github.com/IBM/RMF" target="_blank"> <input type="button" value="GitHub"> </p>
+   </li>
+   
+  </ul>
+ </div> -->
+ 
+    </div>
+ 
+    </div>
+    
+</header>
+
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="preq.html">Getting started</a><div class="wh-tooltip"><p class="shortdesc">To get started working with <span class="keyword">Grafana Plugin Beta</span>,
+                you must first install the product.</p></div></div></div></li><li class="active"><div class="topicref" data-id="install_product"><div class="title"><a href="install_product.html">Installing <span class="keyword">Grafana Plugin Beta</span></a><div class="wh-tooltip"><p class="shortdesc">You must install <span class="keyword">Grafana Plugin Beta</span> to analyze and         visualize data from the OM monitoring agents.</p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+<span class="navprev"><a class="- topic/link link" href="preq.html" title="Prerequisites to install Grafana Plugin Beta" aria-label="Previous topic: Prerequisites to install Grafana Plugin Beta" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="create_ds.html" title="Creating data sources" aria-label="Next topic: Creating data sources" rel="next"></a></span>  </span></div>
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="ovw_omui-d260e13" class="topicref" data-id="ovw_omui" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="ovw_omui.html" id="ovw_omui-d260e13-link">Overview</a><div class="wh-tooltip"><p class="shortdesc"><span class="keyword">Grafana Plugin Beta</span> is designed to offer IBM mainframe         administrators a user-friendly solution for monitoring and overseeing         mainframes.</p></div></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d260e27" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d260e27-link" class="wh-expand-btn"></span><div class="title"><a href="preq.html" id="tocId-d260e27-link">Getting started</a><div class="wh-tooltip"><p class="shortdesc">To get started working with <span class="keyword">Grafana Plugin Beta</span>,
+                you must first install the product.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="preq-d260e36" class="topicref" data-id="preq" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="preq.html" id="preq-d260e36-link">Prerequisites to install <span class="keyword">Grafana Plugin Beta</span></a><div class="wh-tooltip"><p class="shortdesc">You must complete certain tasks before you install <span class="keyword">Grafana Plugin Beta</span>.</p></div></div></div></li><li role="treeitem" class="active"><div data-tocid="install_product-d260e52" class="topicref" data-id="install_product" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="install_product.html" id="install_product-d260e52-link">Installing <span class="keyword">Grafana Plugin Beta</span></a><div class="wh-tooltip"><p class="shortdesc">You must install <span class="keyword">Grafana Plugin Beta</span> to analyze and         visualize data from the OM monitoring agents.</p></div></div></div></li><li role="treeitem"><div data-tocid="create_datasources-d260e68" class="topicref" data-id="create_datasources" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="create_ds.html" id="create_datasources-d260e68-link">Creating data sources</a><div class="wh-tooltip"><p class="shortdesc"><span class="keyword">Tivoli® Enterprise Monitoring                     Server</span> (TEMS) collects and control all the         necessary information and data. To access the monitoring data and alerts from monitoring         agents, it is essential to connect to TEMS by adding it as a data source.</p></div></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="db_ovw-d260e84" class="topicref" data-id="db_ovw" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action db_ovw-d260e84-link" class="wh-expand-btn"></span><div class="title"><a href="db_ovw.html" id="db_ovw-d260e84-link">Dashboards</a><div class="wh-tooltip"><p class="shortdesc"><span class="keyword">Grafana Plugin Beta</span> provides custom panels for the         OMEGAMON data source and dashboard that consists of Charts, Reporting, and Time Series         dashboards.</p></div></div></div></li><li role="treeitem"><div data-tocid="using_near_term_history-d260e140" class="topicref" data-id="using_near_term_history" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="using_near_term_history.html" id="using_near_term_history-d260e140-link">Using near-term history</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="troubleshooting-d260e152" class="topicref" data-id="troubleshooting" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action troubleshooting-d260e152-link" class="wh-expand-btn"></span><div class="title"><a href="troubleshooting.html" id="troubleshooting-d260e152-link">Troubleshooting</a><div class="wh-tooltip"><p class="shortdesc">You can find information about how to analyze and address typical issues that may         arise when using <span class="keyword">Grafana Plugin Beta</span>.</p></div></div></div></li><li role="treeitem"><div data-tocid="pdf_guide-d260e177" class="topicref" data-id="pdf_guide" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="pdf_guide.html" id="pdf_guide-d260e177-link">PDF Guide</a><div class="wh-tooltip"><p class="shortdesc">You can find the link to view or download <span class="keyword">Grafana Plugin Beta</span> guide as a PDF file.</p></div></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Installing <span class="- topic/keyword keyword">Grafana Plugin Beta</span></h1>
+    
+    <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc">You must install <span class="- topic/keyword keyword">Grafana Plugin Beta</span> to analyze and
+        visualize data from the OM monitoring agents.</p>
+        <p class="- topic/p p"></p>
+        <p class="- topic/p p"></p>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>
