@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Query editor","shortdesc":"<p class=\"shortdesc\">In Grafana, queries are essential for fetching and transforming OMEGAMON data from         data sources.<\/p>","href":"query_editor.html","attributes":{"data-id":"query_lang"},"menu":{"hasChildren":true},"tocID":"query_lang-d260e97","next":"query_lang-d260e97"}]});
